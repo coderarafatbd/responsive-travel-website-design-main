@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+}
+
+/* navbar related style start */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFF;
+}
+.logo{
+  display: flex;
+}
+.logo img{
+  width: 48px;
+  height: 56px;
+}
+.logo h1{
+  color: #131313;
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo span{
+  color: #FF5400;
+  font-size: 36px;
+  font-weight: 800;
+}
+.nav-menu{
+  list-style-type: none;
+  display: flex;
+}
+.nav-menu  li{
+  padding: 0 15px;
+  text-decoration: none;
+  color: #424247;
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav-menu span{
+  color: #FF5400;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #ff5722;
+  margin-bottom: 5px;
+  height: 2px;
+  width: 25px;
+}
+/* navbar related style end */
+
+
+/* Responsive navbar Design Start */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 575px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 576px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+  }
+}
+/*Responsive navbar Design End  */
