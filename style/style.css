@@ -95,3 +95,96 @@ body{
   }
 }
 /*Responsive navbar Design End  */
+
+/* banner section related style start */
+.banner{
+  background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/banner.png) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+}
+.banner-content{
+  max-width: 90%;
+}
+h1{
+  font-size: 64px;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+p{
+  margin-bottom: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+.search-form{
+  background: rgba(255, 255, 255, 0.30);
+  border-radius: 8px;
+}
+.search-form input, search-form select, .search-form select{
+  width: 174px;
+  height: 52px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #FFF;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+}
+.search-btn{
+  width: 174px;
+  height: 52px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #FF5400;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .banner-content {
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .search-form input, .search-form select, .search-form Select {
+    padding: 8px;
+  }
+  .search-btn{
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner{
+    height: auto;
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-form input, .search-form select, .search-form select {
+    width: calc(100% - 22px); /* Accounting for margin and padding */
+    margin: 5px 10px; /* Consistent margin for all sides */
+  }
+  .search-btn{
+    width: calc(100% - 22px); /* Accounting for margin and padding */
+    margin: 5px 10px; /* Consistent margin for all sides */
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+}
