@@ -3,50 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive travel website design main</title>
+  <title>Responsive Travel Website Main</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <header>
-    <nav class="navbar">
-    <div class="logo">
-      <img src="images/Group 40071 (2).png" alt="Hero Travel logo"><h1>Salman<span>Travels</span></h1>
+    <nav>
+      <div class="logo">
+        <img src="Images/Group 40071 (2).png" alt="logo">
+        <h1 class="logo-text">Salaman<span>Travels</span></h1>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <!-- Hamburger Icon -->
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+      <div class="menu">
+        <ul>
+          <li><span>Home</span></li>
+          <li>About</li>
+          <li>Packages</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="banner-container">
+        <div class="banner-content">
+          <h1 class="banner-heading">Explore The World</h1>
+          <p class="banner-description">Traveling is one of the most exciting things you can do. It allows you to experience different cultures and cultures with different people.
+            It is also a great way to spend time with family and friends.</p>
+        </div>
+        <div class="banner-search-option">
+          <form >
+            <input type="text" placeholder="Where go" class="where-go">
+            <select class="when">
+              <option selected>when</option>
+            </select>
+            <select class="select-type">
+              <option >
+                Select Type
+              </option>
+            </select>
+            <button class="search-btn"><i class="fas fa-search"></i>  Find Now</button>
+          </form>
+        </div>
+      </div>
+      
     </div>
-    <ul class="nav-menu">
-      <li><span>Home</span></li>
-      <li>Packages</li>
-      <li>Testimonial</li>
-      <li>Blog</li>
-      <li>Contact</li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-  <div class="banner">
-    <div class="banner-content">
-      <h1>Explore Your Travel</h1>
-      <p>Embark on a World of Wonders with Explore Your Travel. Uncover hidden treasures, traverse diverse landscapes, and immerse yourself in unique cultures. Your passport to extraordinary adventures is here</p>
-      <form  class="search-form">
-        <input type="text" placeholder="Where go">
-        <select >
-          <option selected>When</option>
-        </select>
-        <select >
-          <option selected>Select Type</option>
-        </select>
-        <button class="search-btn">
-          <i class="fas fa-search"></i>
-          Find Now
-      </button>
-      </form>
-    </div>
-  </div>
+  </header>
 
-</header>
+  <main>
+    <section class="tour">
+     
+      <div class="tour-container">
+        <div class="tour-content">
+          <h1 class="tour-heading">
+            Our Popular Tours
+          </h1>
+          <p class="tour-description">Explore palm-fringed beaches, crystal-clear waters, and vibrant local culture in our tropical getaway. Your perfect beach retreat awaits.</p>
+          <div class="tour-description-group">
+            <p class="g1">Immerse yourself in the enchanting beauty of Europe. From historic cities to picturesque countryside, experience the best of Europe's rich heritage and diverse landscapes.</p>
+            <p class="g2">Delight in the vibrant traditions and modern wonders of Asia. From ancient temples to bustling markets, this tour offers a captivating blend of history and contemporary allure.</p>
+            <p class="g3">Indulge in the energy of cosmopolitan cities. From iconic landmarks to local hotspots, experience the excitement of urban life on this dynamic city tour.</p>
+          </div>
+              <p class="tour-last-description">These are just a few examples, and the tours can be tailored to meet the preferences and interests of the travelers. Adventure Horizons Travel aims to create unforgettable experiences, blending adventure, culture, and natural beauty in every journey.</p>
 
-<script src="https://kit.fontawesome.com/c35fc19c0d.js" crossorigin="anonymous"></script>
+      </div>
+      <button class="tour-btn">Read More</button>
+      </div>
+      <div class="tour-img">
+        <img src="images/Rectangle 4.png" alt="">
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+        document.getElementById('nav-links').classList.toggle('active');
+    });
+  <script src="https://kit.fontawesome.com/c35fc19c0d.js" crossorigin="anonymous"></script>
 </body>
 </html>
